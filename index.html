@@ -4,21 +4,78 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Versatile UI</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/respnosive.css">
 </head>
 <body class="inter">
-    <header>
-        <nav>
+    <header class="header">
+        <nav class="nav-section flex">
             <h1 class="brand-title"><i>Fitness</i></h1>
-            <ul>    
-                <li class="nav-list"><a class="nav-links" href="#">Home</a></li>
+            <ul class="nav-bar flex">    
+                <li class="nav-list home-bg"><a class="nav-links" href="#">Home</a></li>
                 <li class="nav-list"><a class="nav-links" href="#">Service</a></li>
                 <li class="nav-list"><a class="nav-links" href="#">Contact</a></li>
                 <li class="nav-list"><a class="nav-links" href="#">About</a></li>
             </ul>
+            <div class="bars"><i class="fa-solid fa-bars"></i></div>
         </nav>
+        <section class="banner flex">
+            <div class="banner-text-container">
+                <h1 class="banner-title">Get body in <br><span class="miniver-regular "><i>Shape</i></span> & stay healthy</h1>
+                <p class="banner-describe">A huge selection of health and fitness content, healthy recipes and transformation stories to help you get fit and stay fit!</p>
+                <div>
+                    <button class="btn">Join Club Now!</button>
+                    <button class="btn app-btn">Download App</button>
+                </div>
+            </div>
+            <img class="banner-img" src="./images/banner.png" alt="banner">
+        </section>
     </header>
-    <main></main>
+    <main>
+        <!-- Change Your Habits section -->
+        <section class="habits">
+            <div class="section-headline">
+                <h1 class="section-title">Change Your Habits</h1>
+                <p class="section-brief">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym.</p>
+            </div>
+            <div class="fitness-habits">
+                <div class="fitness flex">
+                    <img src="./images/image 2.png" alt="" class="fitness-img">
+                    <h3>Movement</h3>
+                    <p class="fitness-describe">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="fitness flex">
+                    <img src="./images/image 3.png" alt="" class="fitness-img">
+                    <h3>Time</h3>
+                    <p class="fitness-describe">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="fitness flex">
+                    <img src="./images/image 4.png" alt="" class="fitness-img">
+                    <h3>Practice</h3>
+                    <p class="fitness-describe">We believe fitness should be accessible to everyone</p>
+                </div>
+                <div class="fitness flex">
+                    <img src="./images/image 5.png" alt="" class="fitness-img">
+                    <h3>Weight Loss</h3>
+                    <p class="fitness-describe">We believe fitness should be accessible to everyone</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Run an Extra Mile Easily -->
+        <section class="about-running flex">
+            <div class="run-info flex">
+                <div class="mile-side">
+                    <h1 class="run-title">Run an Extra <br>Mile Easily</h1>
+                    <p class="run-brief">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. With hundreds of professional workouts.</p>
+                    <button class="btn">Join Now</button>
+                </div>
+                <img class="run-img" src="./images/run.jpg" alt="">
+            </div>
+        </section>
+
+    </main>
     <footer></footer>
 </body>
 </html>

@@ -1,36 +1,183 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Miniver&display=swap');
 
+:root{
+    --primary-color: #E6533C;
+    --primary-font: rgba(255, 255, 255, 0.5);
+}
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 /* shared styles */
-.inter{
+  .inter{
     font-family: "Inter", sans-serif;
     font-optical-sizing: auto;
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
+
+    background-color: black;
   }
-.miniver-regular {
+  .miniver-regular{
     font-family: "Miniver", cursive;
     font-weight: 400;
     font-style: normal;
-    background-color: black;
   }
-  
+  main section{
+    max-width: 80%;
+    margin: 80px auto;
+  }
+  .flex{
+    display: flex;
+  }
+  .btn{
+    padding: 15px 40px;
+    border-radius: 35px;
+    background-color: var(--primary-color);
+    border: none;
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: white;
+  }
+  .section-headline{
+    width: 80%;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .section-title{
+    font-size: 2.4rem;
+    font-weight: 800;
+    color: white;
+  }
+  .section-brief{
+    font-size: 1.25rem;
+    color: var(--primary-font);
+    margin: 20px 0 30px 0;
+  }
   /* header styles */
+  .header{
+    max-width: 80%;
+    margin: 50px auto;
+  }
   /* nav styles here */
+  .nav-section{
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+  }
   .brand-title{
     color: #E6533C;
-    font-size: 2rem;
+    font-size: 2.3rem;
     font-weight: 800;
+  }
+  .nav-bar{
+    align-items: center;
+    justify-content: center;
+    border-radius: 40px;
+    box-shadow: 0 0 10px 1px rgba(255, 234, 234, 0.5);
+    padding: 5px 7px;
+  }
+  .bars{
+    display: none;
   }
   .nav-list{
     list-style: none;
+    margin-right: 40px;
+  }
+  .home-bg{
+    background-color: var(--primary-color);
+    border-radius: 25px;
+    padding: 5px 16px;
   }
   .nav-links{
     text-decoration: none;
     color: white;
+    font-size: 1.3rem;
+  }
+  /* banner styles */
+  .banner{
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.5rem;
+    margin-top: 70px;
+  }
+  .banner-text-container{
+    width: 50%;
+  }
+  .banner-title{
+    color: white;
+    font-size: 4.5rem;
+    font-weight: 800;
+  }
+  .app-btn{
+    background-color: transparent;
+    border: 1px solid white;
+    margin-left: 10px;
+  }
+  .banner-describe{
+    color: var(--primary-font);
+    margin: 30px 0 50px 0;
+  }
+
+  /* main styes */
+  /* Change Your Habits section styles */
+  .fitness-habits{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2rem;
+  }
+  .fitness{
+    width: 245px;
+    height: 290px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 0.8rem;
+  }
+  .fitness-img{
+    border-radius: 50%;
+  }
+  .fitness h3{
+    color: white;
+  }
+  .fitness-describe{
+    color: var(--primary-font);
+  }
+  /* Run an Extra Mile Easily section styles*/
+  .about-running{
+    background-color: rgb(34, 34, 34);
+    border-radius: 18px;
+    justify-content: center;
+    align-items: center;
+  }
+  .run-info{
+    width: 90%;
+    margin: 1.5rem auto;
+    gap: 1rem;
+    justify-content: space-between;
+  }
+  .run-side{
+    width: 40%;
+  }
+  .run-title{
+    color: white;
+    font-size: 1.8rem;
+    font-weight: 800;
+  }
+  .run-brief{
+    color: var(--primary-font);
+    margin: 1.3rem 0 1.4rem 0;
+  }
+  .about-running .btn{
+    width: 200px;
+   }   
+  .run-img{
+   width: 40%;
+    border-radius: 18px;
+   
+    /* background-size: cover;
+    background-position: center; */
   }

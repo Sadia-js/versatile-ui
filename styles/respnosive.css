@@ -1,0 +1,78 @@
+/* for mobile devices */
+@media screen and (max-width: 576px) {
+    
+    .nav-bar{
+        display: none;
+    }
+    .bars{
+        display: block;
+        color: white;
+    }
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text-container{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 2.2rem;
+    }
+    .btn{
+        padding: 14px 18px;
+        font-size: 1rem;
+    }
+    .banner-img{
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    /* Change Your Habits section styles */
+    .section-headline{
+        width: 100%;
+        margin-top: 8rem;
+    }
+    .section-title{
+        font-size: 1.7rem;
+    }
+    .section-brief{
+        font-size: 1rem;
+    }
+    .fitness-habits{
+        grid-template-columns: 1fr;
+        justify-items: center;
+    }
+    /* Run an Extra Mile Easily section styles */
+    .run-info{
+        flex-direction: column;
+    }
+    .run-side{
+        width: 100%;
+      }
+    .run-img{
+        width: 100%;
+    }
+   /* .about-running .btn{
+    width: 200px;
+   }    */
+}
+/* for medium devices */
+@media screen and (min-width: 576px) and (max-width: 993px) {
+    .banner{
+        flex-direction: column;
+    }
+    .banner-text-container{
+        width: 100%;
+    }
+    .banner-title{
+        font-size: 3rem;
+    }
+
+    .section-headline{
+        width: 100%;
+        margin-top: 5rem;
+    }
+    .fitness-habits{
+        grid-template-columns: repeat(2, 1fr);
+    }
+    /* Run an Extra Mile Easily styles */
+}
