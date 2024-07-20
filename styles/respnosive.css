@@ -18,14 +18,36 @@
         font-size: 2.2rem;
     }
     .btn{
-        padding: 14px 18px;
         font-size: 1rem;
+    }
+    .app-btn{
+        margin-left: 0;
+        margin-top: 1rem;
     }
     .banner-img{
         width: 100%;
         margin-top: 2rem;
     }
-
+    .badge-1, .badge-2{
+        top: 24%;
+        right: -9%;
+        border-radius: 0.5rem;
+        padding: 0.3rem 0.7rem;
+    }
+    .badge-2{
+        top: 50%;
+        right: 33%;
+    }
+    .banner-right h1{
+        font-size: 1.2rem;
+    }
+    .banner-right p{
+        font-size: 0.8rem;
+    }
+    .badge-circle{
+        width: 25px;
+        height: 25px;
+    }
     /* Change Your Habits section styles */
     .section-headline{
         width: 100%;
@@ -51,9 +73,27 @@
     .run-img{
         width: 100%;
     }
-   /* .about-running .btn{
-    width: 200px;
-   }    */
+    /* BMI Calculator section styles */
+    .bmi-content{
+        flex-direction: column;
+    }
+    .chart, .calculation{
+        width: 100%;
+      }
+    td, th{
+        padding: 0.7rem;
+    }
+    .bmi-form{
+        grid-template-columns: 1fr;
+    }
+    /* Meet Our Team */
+    .team-trainers{
+        grid-template-columns: 1fr;
+    }
+    /* fitness footer styles */
+    .footer-details{
+        grid-template-columns: 1fr;
+    }
 }
 /* for medium devices */
 @media screen and (min-width: 576px) and (max-width: 993px) {
@@ -75,4 +115,25 @@
         grid-template-columns: repeat(2, 1fr);
     }
     /* Run an Extra Mile Easily styles */
+    .bmi-content{
+        flex-direction: column;
+    }
+    .chart, .calculation{
+        width: 100%;
+      }
+    td, th{
+        padding: 0.7rem;
+    }
+    .bmi-form{
+        grid-template-columns: repeat(2, 1fr);
+    }
+        /* Meet Our Team */
+        .team-trainers{
+            grid-template-columns: repeat(2, 1fr);
+        }
+    /* fitness footer styles */
+    .footer-details{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
 }
