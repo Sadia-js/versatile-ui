@@ -64,10 +64,11 @@
         justify-items: center;
     }
     /* Run an Extra Mile Easily section styles */
-    .run-info{
+    .about-running{
         flex-direction: column;
+        padding: 1.2rem;
     }
-    .run-side{
+    .mile-side{
         width: 100%;
       }
     .run-img{
@@ -89,6 +90,9 @@
     /* Meet Our Team */
     .team-trainers{
         grid-template-columns: 1fr;
+    }
+    .trainer{
+        height: 250px;
     }
     /* fitness footer styles */
     .footer-details{
@@ -113,6 +117,7 @@
     }
     .fitness-habits{
         grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
     }
     /* Run an Extra Mile Easily styles */
     .bmi-content{

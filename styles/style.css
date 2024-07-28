@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Miniver&display=swap');
-
+@import url('https://fonts.cdnfonts.com/css/miama');
 :root{
     --primary-color: #E6533C;
     --primary-font: rgba(255, 255, 255, 0.5);
@@ -20,22 +20,27 @@
 
     background-color: black;
   }
-  .miniver-regular{
-    font-family: "Miniver", cursive;
-    font-weight: 400;
-    font-style: normal;
+  .miama{
+    font-family: 'Miama', sans-serif;  
+    font-weight: 400;                                    
   }
   .flex{
     display: flex;
   }
   .btn{
     padding: 12px 40px;
-    border-radius: 35px;
-    background-color: var(--primary-color);
-    border: none;
-    font-size: 1.2rem;
+    border-radius: 30px;
+    font-size: 1rem;
     font-weight: 500;
+    background-color: transparent;
+    border: 1px solid white;
+  }
+  .btn:hover{
+    background-color: var(--primary-color);
+  }
+  .btn a{
     color: white;
+    text-decoration: none;
   }
   .section-headline{
     width: 60%;
@@ -43,37 +48,42 @@
     text-align: center;
   }
   .section-title{
-    font-size: 2.4rem;
+    font-size: 2rem;
     font-weight: 800;
     color: white;
   }
   .section-brief{
-    font-size: 1.25rem;
+    font-size: 1.2rem;
     color: var(--primary-font);
-    margin: 20px 0 30px 0;
+    margin: 20px 0 60px 0;
   }
   /* header styles */
   .header{
-    max-width: 80%;
-    margin: 50px auto;
+    padding-top: 50px;
+    background-image:linear-gradient(
+      90deg, 
+      rgb(40 40 40 / 40%), 
+      rgb(127 127 127 / 20%));
   }
   /* nav styles here */
   .nav-section{
+    max-width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
   }
   .brand-title{
     color: #E6533C;
-    font-size: 2.3rem;
+    font-size: 2.1rem;
     font-weight: 800;
   }
   .nav-bar{
     align-items: center;
     justify-content: center;
     border-radius: 40px;
-    box-shadow: 0 0 10px 1px rgba(255, 234, 234, 0.5);
-    padding: 5px 7px;
+    box-shadow: 0 0 4px rgb(172 172 172 / 53%);
+    padding: 7px 10px;
   }
   .bars{
     display: none;
@@ -90,26 +100,27 @@
   .nav-links{
     text-decoration: none;
     color: white;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
   }
   /* banner styles */
   .banner{
+    max-width: 80%;
+    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    gap: 1.5rem;
-    margin-top: 70px;
+    gap: 65px;
+    margin-top: 2rem;
   }
-  .banner-text-container{
-    width: 50%;
+  .banner-text-container p{
+    width: 65%;
   }
   .banner-title{
     color: white;
-    font-size: 4.5rem;
+    font-size: 3rem;
     font-weight: 800;
+    line-height: 130%;
   }
   .app-btn{
-    background-color: transparent;
-    border: 1px solid white;
     margin-left: 10px;
   }
   .banner-describe{
@@ -122,15 +133,16 @@
   .badge-1, .badge-2{
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 1rem;
-    background: rgba(255, 255, 255, 0.1);
-    backdrop-filter: blur(20px);
     position: absolute;
-    top: 23%;
-    right: -27%;
+    top: 18%;
+    right: -16%;
     padding: 1rem 1.75rem 1rem 1.75rem;
     z-index: -1;
+    background: rgba(255, 255, 255, 0.1);
   }
   .badge-2{
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(20px);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -147,11 +159,11 @@
   }
   .banner-right h1{
     color: white;
-    font-size: 2.3rem;
+    font-size: 1.8rem;
     font-weight: 900;
   }
   .banner-right p{
-    color: var(--primary-font);
+    color: rgba(255, 255, 255, 0.65);
     width: max-content;
   }
   /* main styes */
@@ -164,6 +176,7 @@
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 2rem;
+    margin-top: 1.5rem;
   }
   .fitness{
     width: 245px;
@@ -189,17 +202,13 @@
     margin: 80px auto;
     background-color: rgb(34, 34, 34);
     border-radius: 18px;
-    justify-content: center;
-    align-items: center;
-  }
-  .run-info{
-    width: 90%;
-    margin: 1.5rem auto;
-    gap: 1rem;
     justify-content: space-between;
+    gap: 5rem;
+    align-items: center;
+    padding: 2rem;
   }
-  .run-side{
-    width: 40%;
+  .mile-side{
+    width: 50%;
   }
   .run-title{
     color: white;
@@ -208,13 +217,13 @@
   }
   .run-brief{
     color: var(--primary-font);
-    margin: 1.3rem 0 1.4rem 0;
+    margin: 1.3rem 0 1.6rem 0;
   }
   .about-running .btn{
     width: 200px;
    }   
   .run-img{
-   width: 40%;
+   width: 50%;
     border-radius: 18px;
   }
 
@@ -245,12 +254,11 @@
     margin-bottom: 2rem;
   }
   table{
-    border: 1px solid white;
     border-collapse: collapse;
     margin-top: 50px;
   }
   td, th{
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    border: 2px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
     padding: 1rem 2rem;
     text-align: center;
@@ -277,8 +285,11 @@
   }
   .team-trainers{
     display: grid;
-    grid-template-columns: repeat(3, 326px);
+    grid-template-columns: repeat(3, 1fr);
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 1.25rem;
     gap: 1.25rem;
+    border-radius: 18px;
   }
   .trainer{
     position: relative;
@@ -319,7 +330,7 @@
     padding: 3rem 0;
   }
   .foot-head{
-    font-size: 3.5rem;
+    font-size: 3rem;
     font-weight: 800;
     color: var(--primary-color);
     margin-bottom: 1rem;
@@ -333,7 +344,7 @@
     flex-direction: column;
     gap: 1.5rem;
   }
-  .contact-us h2{
+  .contact-us h3{
     color: white;
   }
   .footer-part{
