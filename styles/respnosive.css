@@ -25,21 +25,20 @@
         margin-top: 1rem;
     }
     .banner-img{
-        width: 100%;
-        margin-top: 2rem;
+        width: 85%;
     }
     .badge-1, .badge-2{
-        top: 24%;
-        right: -9%;
+        top: 10%;
+        right: -3%;
         border-radius: 0.5rem;
         padding: 0.3rem 0.7rem;
     }
     .badge-2{
-        top: 50%;
-        right: 33%;
+        top: 65%;
+        right: 45%;
     }
     .banner-right h1{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
     .banner-right p{
         font-size: 0.8rem;
@@ -50,8 +49,7 @@
     }
     /* Change Your Habits section styles */
     .section-headline{
-        width: 100%;
-        margin-top: 8rem;
+        width: 95%;
     }
     .section-title{
         font-size: 1.7rem;
@@ -112,14 +110,24 @@
     }
 
     .section-headline{
-        width: 100%;
-        margin-top: 5rem;
+        width: 95%;
     }
     .fitness-habits{
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-    /* Run an Extra Mile Easily styles */
+    /* Run an Extra Mile Easily section styles */
+      .about-running{
+        flex-direction: column;
+        padding: 1.2rem;
+    }
+    .mile-side{
+        width: 100%;
+      }
+    .run-img{
+        width: 100%;
+    }
+        /* BMI Calculator section styles */
     .bmi-content{
         flex-direction: column;
     }
