@@ -325,8 +325,8 @@
   }
   .footer-details{
     display: grid;
-    grid-template-columns: 445px repeat(2, 181px);
-    gap: 2.5rem;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 4rem;
     padding: 3rem 0;
   }
   .foot-head{
