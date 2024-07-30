@@ -58,13 +58,14 @@
     margin: 20px 0 60px 0;
   }
   /* header styles */
-  .header{
+  header{
     padding-top: 50px;
-    background-image:linear-gradient(
-      90deg, 
-      rgb(40 40 40 / 40%), 
-      rgb(127 127 127 / 20%));
+    background: linear-gradient(180.00deg, rgb(174 174 174 / 16%), 
+    rgb(250 236 236 / 29%) 56.643%,
+    rgba(119, 119, 119, 0) 100%);
+  
   }
+  
   /* nav styles here */
   .nav-section{
     max-width: 80%;
@@ -108,8 +109,8 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    gap: 65px;
-    margin-top: 2rem;
+    gap: 50px;
+    margin-top: 2.5rem;
   }
   .banner-text-container p{
     width: 65%;
@@ -132,19 +133,18 @@
   }
   .badge-1, .badge-2{
     border: 1px solid rgba(255, 255, 255, 0.1);
-    border-radius: 1rem;
+    border-radius: 12px;
     position: absolute;
-    top: 18%;
-    right: -16%;
-    padding: 1rem 1.75rem 1rem 1.75rem;
+    top: 23%;
+    right: -28%;
+    padding: 1rem 1.5rem;
     z-index: -1;
     background: rgba(255, 255, 255, 0.1);
-  }
-  .badge-2{
-    background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
+  }
+  .badge-2{ 
+    background: rgba(48, 48, 48, 0.54);
     display: flex;
-    justify-content: center;
     align-items: center;
     gap: 1rem;
     top: 72%;
@@ -159,12 +159,11 @@
   }
   .banner-right h1{
     color: white;
-    font-size: 1.8rem;
+    font-size: 2.4rem;
     font-weight: 900;
   }
   .banner-right p{
     color: rgba(255, 255, 255, 0.65);
-    width: max-content;
   }
   /* main styes */
   /* Change Your Habits section styles */
