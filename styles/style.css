@@ -17,7 +17,8 @@
     font-style: normal;
     font-variation-settings:
       "slnt" 0;
-
+    max-width: 1280px;
+    margin: 0 auto;
     background-color: black;
   }
   .miama{
@@ -28,12 +29,14 @@
     display: flex;
   }
   .btn{
-    padding: 12px 40px;
-    border-radius: 30px;
-    font-size: 1rem;
+    padding: 14px 35px;
+    border-radius: 50px;
+    font-size: 1.2rem;
     font-weight: 500;
     background-color: transparent;
     border: 1px solid white;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
   }
   .btn:hover{
     background-color: var(--primary-color);
@@ -59,20 +62,19 @@
   }
   /* header styles */
   header{
-    padding-top: 50px;
+    padding-top: 2.5rem;
     background: linear-gradient(180.00deg, rgb(174 174 174 / 16%), 
     rgb(250 236 236 / 29%) 56.643%,
-    rgba(119, 119, 119, 0) 100%);
-  
+    rgba(119, 119, 119, 0) 100%);     
   }
   
   /* nav styles here */
   .nav-section{
-    max-width: 80%;
-    margin: 0 auto;
     justify-content: space-between;
     align-items: center;
     gap: 30px;
+    max-width: 80%;
+    margin: 0 auto;
   }
   .brand-title{
     color: #E6533C;
@@ -109,20 +111,17 @@
     margin: 0 auto;
     justify-content: space-between;
     align-items: center;
-    gap: 50px;
+    gap: 3rem;
     margin-top: 2.5rem;
   }
   .banner-text-container p{
-    width: 65%;
+    margin-right: 12rem;
   }
   .banner-title{
     color: white;
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: 800;
     line-height: 130%;
-  }
-  .app-btn{
-    margin-left: 10px;
   }
   .banner-describe{
     color: var(--primary-font);
@@ -135,12 +134,15 @@
     border: 1px solid rgba(255, 255, 255, 0.1);
     border-radius: 12px;
     position: absolute;
-    top: 23%;
+    top: 22%;
     right: -28%;
-    padding: 1rem 1.5rem;
     z-index: -1;
     background: rgba(255, 255, 255, 0.1);
     backdrop-filter: blur(20px);
+    padding-left: 1.5rem;
+    padding-top: 1rem;
+    padding-right: 1rem;
+    padding-bottom: 1rem;
   }
   .badge-2{ 
     background: rgba(48, 48, 48, 0.54);
@@ -159,38 +161,60 @@
   }
   .banner-right h1{
     color: white;
-    font-size: 2.4rem;
+    font-size: 1.8rem;
     font-weight: 900;
   }
   .banner-right p{
     color: rgba(255, 255, 255, 0.65);
+    margin-top: 0.35rem;
+    width: max-content;
   }
   /* main styes */
+  /* our story */
+  .about-story{
+    max-width: 80%;
+    margin: 80px auto;
+    align-items: center;
+    gap: 3rem;
+    background-color: rgb(34, 34, 34);
+    padding: 2rem;
+    border-radius: 18px;
+  }
+  .about-story img{
+    width: 100%;
+    border-radius: 18px;
+  }
+  .about-story h1{
+    color: white;
+  }
+  .about-story{
+    color: var(--primary-font);
+  }
   /* Change Your Habits section styles */
   .habits{
     max-width: 80%;
     margin: 80px auto;
   }
   .fitness-habits{
+    margin-top: 5rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 2rem;
-    margin-top: 1.5rem;
+    place-items: center;
+    gap: 1.5rem;
   }
   .fitness{
-    width: 245px;
-    height: 290px;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    gap: 0.8rem;
+    gap: 0.65rem;
   }
   .fitness-img{
     border-radius: 50%;
   }
   .fitness h3{
     color: white;
+    margin-top: 2rem;
   }
   .fitness-describe{
     color: var(--primary-font);
@@ -218,9 +242,6 @@
     color: var(--primary-font);
     margin: 1.3rem 0 1.6rem 0;
   }
-  .about-running .btn{
-    width: 200px;
-   }   
   .run-img{
    width: 50%;
     border-radius: 18px;
@@ -252,6 +273,9 @@
     gap: 1rem;
     margin-bottom: 2rem;
   }
+#activity{
+  grid-column: 1 / span 2;
+}
   table{
     border-collapse: collapse;
     margin-top: 50px;
@@ -340,6 +364,7 @@
   }
   .contact-us{
     display: flex;
+    
     flex-direction: column;
     gap: 1.5rem;
   }
