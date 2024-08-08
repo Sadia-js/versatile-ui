@@ -200,6 +200,7 @@
     font-size: 1.5rem;
     font-weight: 800;
     border-radius: 0.45rem;
+    border: none;
   }
   .price-btn:hover{
     background-color: azure;
@@ -262,6 +263,10 @@
   }
 
   /* BMI Calculator section styles */
+  .bmi-section{
+    max-width: 80%;
+    margin: 0 auto;
+  }
   .bmi-details{
     background-color: rgb(34, 34, 34);
   }

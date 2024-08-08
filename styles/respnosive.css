@@ -33,7 +33,7 @@
     }
     .badge-1, .badge-2{
         top: 10%;
-        right: -3%;
+        right: 0%;
         border-radius: 0.5rem;
         padding: 0.75rem 0.25rem 0.75rem 0.75rem;
     }
@@ -119,6 +119,9 @@
     .foot-info{
         flex-direction: column;
       }
+    .foot-desc{
+        margin-right: 0;
+    }
 }
 
 /* for medium devices */
