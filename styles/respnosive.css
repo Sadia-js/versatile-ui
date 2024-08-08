@@ -51,9 +51,9 @@
         width: 25px;
         height: 25px;
     }
-    /* about-=story styles*/
-    .about-story{
-         flex-direction: column;
+    /* pricing plans */
+   .price-cards{
+    grid-template-columns: 1fr;
     }
     /* Change Your Habits section styles */
     .section-headline{
@@ -140,10 +140,11 @@
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
     }
-      /* about-=story styles*/
-      .about-story{
-        flex-direction: column;
-   }
+    
+    /* pricing plans */
+        .price-cards{
+         grid-template-columns: repeat(2, 1fr);
+    }
     /* Run an Extra Mile Easily section styles */
       .about-running{
         flex-direction: column;

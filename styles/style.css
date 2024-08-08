@@ -170,25 +170,39 @@
     width: max-content;
   }
   /* main styes */
-  /* our story */
-  .about-story{
+  /* pricing plans */
+  .plans-section{
     max-width: 80%;
-    margin: 80px auto;
-    align-items: center;
-    gap: 3rem;
+    margin: 120px auto;
+  }
+  .price-cards{
+    color: white;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+    text-align: center;
+  }
+  .price-card{
     background-color: rgb(34, 34, 34);
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
     padding: 2rem;
     border-radius: 18px;
   }
-  .about-story img{
-    width: 100%;
-    border-radius: 18px;
+  .price-card h1{
+    font-size: 1.8rem;
   }
-  .about-story h1{
-    color: white;
+  .price-btn{
+    padding: 0.35rem 0.85rem;
+    background-color: rgb(113, 255, 208);
+    font-size: 1.5rem;
+    font-weight: 800;
+    border-radius: 0.45rem;
   }
-  .about-story{
-    color: var(--primary-font);
+  .price-btn:hover{
+    background-color: azure;
   }
   /* Change Your Habits section styles */
   .habits{
