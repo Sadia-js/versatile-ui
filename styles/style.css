@@ -271,16 +271,12 @@
   .bmi-content{
     max-width: 80%;
     margin: 0 auto;
-    gap: 4rem;
+    justify-content: space-between;
+    gap: 3rem;
     padding: 3rem 0;
   }
   .chart, .calculation{
     color: white;
-    width: 40%;
-  }
-  .chart{
-    display: grid;
-    grid-template-columns: 1fr;
   }
   .bmi-form{
     display: grid;
@@ -294,8 +290,7 @@
   td, th{
     border: 2px solid rgba(255, 255, 255, 0.1);
     color: rgba(255, 255, 255, 0.5);
-    padding: 1rem 0;
-    text-align: center;
+    padding: 1rem;
   }
   th{
     color: white;
