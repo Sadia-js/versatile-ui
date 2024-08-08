@@ -37,9 +37,11 @@
     border: 1px solid white;
     margin-right: 1rem;
     margin-bottom: 1rem;
+    background-color: var(--primary-color);
+    border: none;
   }
   .btn:hover{
-    background-color: var(--primary-color);
+    background-color: #ffb9afe6;
   }
   .btn a{
     color: white;
