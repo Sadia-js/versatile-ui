@@ -362,9 +362,12 @@
   }
   .footer-details{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     gap: 4rem;
     padding: 3rem 0;
+  }
+  .foot-info{
+    gap: 3rem;
   }
   .foot-head{
     font-size: 3rem;
@@ -375,10 +378,9 @@
   .foot-desc{
     color: var(--primary-font);
     text-decoration: none;
+    margin-right: 5rem;
   }
   .contact-us{
-    display: flex;
-    
     flex-direction: column;
     gap: 1.5rem;
   }

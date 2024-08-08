@@ -116,6 +116,9 @@
     .footer-details{
         grid-template-columns: 1fr;
     }
+    .foot-info{
+        flex-direction: column;
+      }
 }
 
 /* for medium devices */
