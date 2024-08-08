@@ -127,7 +127,7 @@
                                 <thead>
                                     <tr>
                                         <th>BMI</th>
-                                        <th>Weight status</th>
+                                        <th>Weight Status</th>
                                     </tr>
                                 </thead>
                                 <tbody>
@@ -151,18 +151,18 @@
                             </table>
                         </div>
                         <div class="calculation">
-                            <h3>Calculate your BMI</h3>
-                            <p class="section-brief">To calculate BMI, divide your weight in kilograms by your height in meters squared.</p>
+                            <h3>Calculate Your BMI</h3>
+                            <p>To calculate BMI, divide your weight in kilograms by your height in meters squared.</p>
                             <form class="bmi-form">
                                 <input type="text" placeholder="Height/cm">
                                 <input type="text" placeholder="Weight/kg">
                                 <input type="text" placeholder="Age">
-                                <select name="gender" id="gender">
-                                    <option disabled-selected>Sex</option>
+                                <select name="gender" class="gender">
+                                    <option value="" disabled-selected hidden>Sex</option>
                                     <option value="gender">Male</option>
                                     <option value="gender">Female</option>
                                 </select>
-                                <select name="activity" id="activity">
+                                <select name="activity" class="placeholder dropdown">
                                     <option value="factor">Select an activity factor</option>
                                 </select>     
                             </form>
